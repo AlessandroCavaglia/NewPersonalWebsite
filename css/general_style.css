@@ -6,6 +6,19 @@
     justify-content: center;
     align-items: center;
     animation: ani 5s ease-in-out infinite;
+    flex-direction: column;
+}
+.footer{
+
+    font-size: 40px;
+}
+.footLink{
+    color: #c4bfb8;
+    padding-left: 3px;
+}
+
+.footLink:hover{
+    color: #aca38c;
 }
 
 a{
@@ -179,26 +192,55 @@ nav{
         width: 100vw;
         justify-content: center;
         background-color: #1f202914;
+        border-radius: 0px;
+        height: calc(100vh + 13px);
+        margin-top: -105px;
     }
     .navLink{
         font-size: 50px;
     }
-}
-/* Mobile phone*/
-@media screen and (max-width: 900px) {
+
     .mcBurger{
         width: 66px;
         height: 8px;
         margin-bottom: 10px;
         border-radius: 6px;
     }
+    .hiddenNavCheckBox:checked ~ .mcBurger
+    {
+        opacity: 1;
+        transform: rotate(45deg) translate(-3.5px, -7px);
+    }
+
+    .hiddenNavCheckBox:checked ~ .mcBurger:nth-last-child(2)
+    {
+        transform: rotate(-45deg) translate(0, -4px);
+    }
+    .hiddenNavCheckBox{
+        width: 70px;
+        height: 54px;
+    }
+}
+/* Mobile phone*/
+@media screen and (max-width: 900px) {
+    .mcBurger{
+        width: 49.5px;
+        height: 6px;
+        margin-bottom: 7.5px;
+        border-radius: 4.5px;
+    }
+    .hiddenNavCheckBox{
+        width: 49.5px;
+        height: 6px;
+    }
     #menu{
         margin-top: -104px;
+        margin-left: -20px;
     }
     .hiddenNavCheckBox:checked ~ .mcBurger
     {
         opacity: 1;
-        transform: rotate(45deg) translate(-3.5px, -6px);
+        transform: rotate(45deg) translate(-2px, -4.5px);
     }
 
     .hiddenNavCheckBox:checked ~ .mcBurger:nth-last-child(2)
@@ -211,6 +253,9 @@ nav{
     }
     .navLink{
         font-size: 55px;
+    }
+    #menuToggle{
+        left: 20px;
     }
 }
 
@@ -259,12 +304,40 @@ nav{
     70% { -webkit-transform: translateY(7%); }
     100% { -webkit-transform: translateY(5%); }
 }
-
-/*@keyframes over {
-    100% { overflow: unset }
+/* Tablet */
+@media screen and (max-width: 1330px) {
+    .content{
+        width: 85%;
+    }
+    .bigFirstText{
+        font-size: 70px;
+    }
+    .footer{
+        color: #c4bfb8;
+        font-size: 30px;
+    }
 }
 
-@-webkit-keyframes over {
-    100% { overflow: unset }
-}*/
+/* Mobile phone*/
+@media screen and (max-width: 900px) {
+    .content{
+        height: 95%;
+    }
+    .homeTextBoxContainer{
+        height: 60%;
+        margin-top: 20%;
+    }
+    .bigFirstText{
+        font-size: 50px;
+    }
+    .footer{
+        color: #c4bfb8;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .bigFirstText{
+        font-size: 40px;
+    }
+}
 /* End FirstPage */
