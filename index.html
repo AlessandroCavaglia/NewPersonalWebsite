@@ -8,36 +8,170 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7e1c75f6cf.js" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
 </head>
 <body>
    <nav role="navigation">
         <div id="menuToggle">
-            <input type="checkbox" class="hiddenNavCheckBox"/>
+            <input type="checkbox" id="hiddenNavCheckBox" class="hiddenNavCheckBox"/>
 
             <span class="mcBurger"></span>
             <span class="mcBurger"></span>
             <span class="mcBurger"></span>
             <div id="menu">
                 <ul>
-                    <a href="#"><li class="text navLink cursive">Home</li></a>
-                    <a href="#"><li  class="text navLink cursive">Education</li></a>
-                    <a href="#" ><li class="text navLink cursive">Career</li></a>
+                    <a href="#" onclick="changeSection('home')"><li class="text navLink cursive">Home</li></a>
+                    <a href="#" onclick="changeSection('career')"><li class="text navLink cursive">Career</li></a>
                     <a href="#" ><li class="text navLink cursive">Skills</li></a>
-                    <a href="#" ><li class="text navLink cursive">Contacts</li></a>
+                    <a href="#" ><li class="text navLink cursive">Projects</li></a>
+                    <!--<a href="#" ><li class="text navLink cursive">Contacts</li></a>-->
                 </ul>
             </div>
         </div>
     </nav>
 
     <div class="main-content">
-        <div class="content">
-            <div class="homeTextBoxContainer">
+        <div class="homeContent" id="home">
+            <div class="homeTextBoxContainer" >
                 <div class="homeTextBox slide-in">
                     <h1 class="text bigFirstText" style="margin-top: -15px">Hello</h1>
                     <h1 class="text bigFirstText">I'm Alessandro Cavaglià</h1>
                     <h1  class="text bigFirstText" style="margin-bottom: -15px">Welcome to my world</h1>
+                </div>
+            </div>
+        </div>
+        <div class="timeLineContent hidden" id="career">
+            <div class="timeLineContainer">
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnLeft" style="text-align: right">
+                        <p>Ciao</p>
+                        <lord-icon
+                                src="https://cdn.lordicon.com/gmzxduhd.json"
+                                trigger="hover"
+                                class="timeLinePoint">
+                        </lord-icon>
+
+                    </div>
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnLeft" style="text-align: right">
+                        <p>Ciao</p>
+                        <lord-icon
+                                src="https://cdn.lordicon.com/ajyyzcwv.json"
+                                trigger="hover"
+                                class="timeLinePoint"
+                                style="transform: scaleX(-1);">
+                        </lord-icon>
+                    </div>
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnLeft" style="text-align: right">
+                        <p>Ciao</p>
+                        <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+                        <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+                        <lord-icon
+                                src="https://cdn.lordicon.com/jqnthkou.json"
+                                trigger="hover"
+                                class="timeLinePoint">
+                        </lord-icon>
+                    </div>
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnLeft" style="text-align: right">
+                        <p>Ciao</p>
+                        <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+                        <lord-icon
+                                src="https://cdn.lordicon.com/fhtaantg.json"
+                                trigger="hover"
+                                class="timeLinePoint">
+                        </lord-icon>
+                    </div>
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnLeft" style="text-align: right">
+                        <p>Ciao</p>
+                        <span class="timeLinePoint"></span>
+                    </div>
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnLeft" style="text-align: right">
+                        <p>Ciao</p>
+                        <span class="timeLinePoint"></span>
+                    </div>
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnLeft" style="text-align: right">
+                        <p>Ciao</p>
+                        <span class="timeLinePoint"></span>
+                    </div>
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnLeft" style="text-align: right">
+                        <p>Ciao</p>
+                        <span class="timeLinePoint"></span>
+                    </div>
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnLeft" style="text-align: right">
+                        <p>Ciao</p>
+                        <span class="timeLinePoint"></span>
+                    </div>
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnLeft" style="text-align: right">
+                        <p>Ciao</p>
+                        <span class="timeLinePoint"></span>
+                    </div>
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                        <p>Ciao</p>
+                    </div>
                 </div>
             </div>
         </div>
