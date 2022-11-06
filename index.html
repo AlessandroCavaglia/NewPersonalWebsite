@@ -22,9 +22,9 @@
             <span class="mcBurger"></span>
             <div id="menu">
                 <ul>
-                    <a href="#" onclick="changeSection('home')"><li class="text navLink cursive">Home</li></a>
-                    <a href="#" onclick="changeSection('career')"><li class="text navLink cursive">Career</li></a>
-                    <a href="#" ><li class="text navLink cursive">Skills</li></a>
+                    <a href="#home" onclick="changeSection('home')"><li class="text navLink cursive">Home</li></a>
+                    <a href="#career" onclick="changeSection('career')"><li class="text navLink cursive">Career</li></a>
+                    <a href="#skills" onclick="changeSection('skills')"><li class="text navLink cursive">Skills</li></a>
                     <a href="#" ><li class="text navLink cursive">Projects</li></a>
                     <!--<a href="#" ><li class="text navLink cursive">Contacts</li></a>-->
                 </ul>
@@ -43,10 +43,16 @@
             </div>
         </div>
         <div class="timeLineContent hidden" id="career">
-            <div class="timeLineContainer">
+            <!-- Computer and tablet visualization -->
+            <div class="timeLineContainer bigScreen">
+                <div class="timeLineRow" style="display: inline-block">
+                    <h1 class="text timeLineEndText">Currently i'm working for <a class="orangeText">PayReply</a> as a Backend Developer while studyng for
+                        Master's Degree in AI at the Computer Science Department in Turin </h1>
+                    <h1  class="text timeLineEndText orangeText" style="margin-bottom: 5%">This is my progress so far: </h1>
+                </div>
                 <div class="timeLineRow">
                     <div class="timeLineColumn timeLineColumnLeft">
-                        <div class="timeLineTextContainer timeLineTextLeft">
+                        <div class="timeLineTextContainer timeLineTextLeft" style="animation-delay: 0.2s;">
                             <h2 class="text timeLineText timeLineTextYear">1999</h2>
                             <h2 class="text timeLineText">I was born  in Turin, Piedmont</h2>
                         </div>
@@ -74,7 +80,7 @@
                         </lord-icon>
                     </div>
                     <div class="timeLineColumn timeLineColumnRight">
-                        <div class="timeLineTextContainer timeLineTextRight">
+                        <div class="timeLineTextContainer timeLineTextRight" style="animation-delay: 0.5s;">
                             <h2 class="text timeLineText timeLineTextYear">2018</h2>
                             <h2 class="text timeLineText">I graduated at Artom Industrial Technical Institute</h2>
                         </div>
@@ -82,8 +88,8 @@
                 </div>
                 <div class="timeLineRow">
                     <div class="timeLineColumn timeLineColumnLeft" style="text-align: right">
-                        <div class="timeLineTextContainer timeLineTextLeft">
-                            <h2 class="text timeLineText timeLineTextYear">Spring 2021</h2>
+                        <div class="timeLineTextContainer timeLineTextLeft" style="animation-delay: 0.8s;">
+                            <h2 class="text timeLineText timeLineTextYear">Spring 2021 - Now</h2>
                             <h2 class="text timeLineText">Started a great entrepreneurial adventure with two great colleagues called <a class="orangeText">ABCLabs</a></h2>
                         </div>
                         <lord-icon
@@ -108,16 +114,16 @@
                         </lord-icon>
                     </div>
                     <div class="timeLineColumn timeLineColumnRight">
-                        <div class="timeLineTextContainer timeLineTextRight">
+                        <div class="timeLineTextContainer timeLineTextRight" style="animation-delay: 1.1s;">
                             <h2 class="text timeLineText timeLineTextYear">Autumn 2021</h2>
-                            <h2 class="text timeLineText">I graduated from University of Turin, Computer science department with a grade of 110L</h2>
+                            <h2 class="text timeLineText">I graduated from University of Turin, Computer Science Department with a grade of 110L</h2>
                         </div>
                     </div>
                 </div>
                 <div class="timeLineRow">
                     <div class="timeLineColumn timeLineColumnLeft" style="text-align: right">
-                        <div class="timeLineTextContainer timeLineTextLeft">
-                            <h2 class="text timeLineText timeLineTextYear">Autumn 2021</h2>
+                        <div class="timeLineTextContainer timeLineTextLeft" style="animation-delay: 1.4s;">
+                            <h2 class="text timeLineText timeLineTextYear">Autumn 2021 - Now</h2>
                             <h2 class="text timeLineText">Started working at PayReply</h2>
                         </div>
                         <lord-icon
@@ -140,6 +146,208 @@
                     <h1  class="text timeLineEndText orangeText">It will be worth it </h1>
                 </div>
             </div>
+            <!-- Mobile visualization -->
+            <div class="timeLineContainer mobileScreen">
+                <div class="timeLineRow" style="display: inline-block">
+                    <h1 class="text timeLineEndText">Currently i'm working for <a class="orangeText">PayReply</a> as a Backend Developer while studyng for
+                        Master's Degree in AI at the Computer Science Department in Turin </h1>
+                    <h1  class="text timeLineEndText orangeText" style="margin-bottom: 5%">This is my progress so far: </h1>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <div class="timeLineTextContainer timeLineTextLeft" style="animation-delay: 0.2s;">
+                            <h2 class="text timeLineText timeLineTextYear">1999</h2>
+                            <h2 class="text timeLineText">I was born  in Turin, Piedmont</h2>
+                        </div>
+                        <lord-icon
+                                src="https://cdn.lordicon.com/gmzxduhd.json"
+                                trigger="hover"
+                                colors="primary:#c4bfb8,secondary:#ff9600"
+                                stroke="95"
+                                class="timeLinePoint">
+                        </lord-icon>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <div class="timeLineTextContainer timeLineTextLeft" style="animation-delay: 0.5s;">
+                            <h2 class="text timeLineText timeLineTextYear">2018</h2>
+                            <h2 class="text timeLineText">I graduated at Artom Industrial Technical Institute</h2>
+                        </div>
+                        <lord-icon
+                                src="https://cdn.lordicon.com/ajyyzcwv.json"
+                                trigger="hover"
+                                class="timeLinePoint"
+                                colors="primary:#c4bfb8,secondary:#ff9600"
+                                stroke="80"
+                                style="transform: scaleX(-1);">
+                        </lord-icon>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <div class="timeLineTextContainer timeLineTextLeft" style="animation-delay: 0.8s;">
+                            <h2 class="text timeLineText timeLineTextYear">Spring 2021 - Now</h2>
+                            <h2 class="text timeLineText">Started a great entrepreneurial adventure with two great colleagues called <a class="orangeText">ABCLabs</a></h2>
+                        </div>
+                        <lord-icon
+                                src="https://cdn.lordicon.com/uukerzzv.json"
+                                trigger="hover"
+                                colors="primary:#c4bfb8,secondary:#ff9600"
+                                stroke="80"
+                                class="timeLinePoint">
+                        </lord-icon>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <div class="timeLineTextContainer timeLineTextLeft" style="animation-delay: 1.1s;">
+                            <h2 class="text timeLineText timeLineTextYear">Autumn 2021 - Now</h2>
+                            <h2 class="text timeLineText">I graduated from University of Turin, Computer science department with a grade of 110L</h2>
+                        </div>
+                        <lord-icon
+                                src="https://cdn.lordicon.com/jqnthkou.json"
+                                trigger="hover"
+                                colors="primary:#c4bfb8,secondary:#ff9600"
+                                stroke="80"
+                                class="timeLinePoint">
+                        </lord-icon>
+                    </div>
+                </div>
+                <div class="timeLineRow">
+                    <div class="timeLineColumn timeLineColumnRight">
+                        <div class="timeLineTextContainer timeLineTextLeft" style="animation-delay: 1.4s;">
+                            <h2 class="text timeLineText timeLineTextYear">Autumn 2021</h2>
+                            <h2 class="text timeLineText">Started working at PayReply</h2>
+                        </div>
+                        <lord-icon
+                                src="https://cdn.lordicon.com/fhtaantg.json"
+                                trigger="hover"
+                                colors="primary:#c4bfb8,secondary:#ff9600"
+                                stroke="95"
+                                class="timeLinePoint">
+                        </lord-icon>
+                    </div>
+                </div>
+                <div class="timeLineRowLast timeLineRow">
+                    <div class="timeLineColumn timeLineColumnLeft timeLineColumnLeftLast" style="text-align: right">
+                    </div>
+                </div>
+                <div class="timeLineRow" style="display: inline-block">
+                    <h1 class="text timeLineEndText">I'm still trying to write the rest of my history so please be patient</h1>
+                    <h1  class="text timeLineEndText orangeText">It will be worth it </h1>
+                </div>
+            </div>
+        </div>
+        <div class="skillsContent hidden" id="skills">
+            <div class="skillRow">
+                <lord-icon
+                        src="https://cdn.lordicon.com/dtgezzsi.json"
+                        trigger="hover"
+                        colors="primary:#c4bfb8,secondary:#ff9600"
+                        stroke="95"
+                        class="skillTitleIcon">
+                </lord-icon>
+                <h1 class="text skillTextTitle">Skills:</h1>
+            </div>
+            <div class="skillRow languageRow" id="backRow">
+                <h2 class="text skillProgrammingLanguage">Backend</h2>
+                <div class="skillStatusBar" id="backStatusBar">
+                    <div class="skillLevel" style="-webkit-animation: backend-animation 1s forwards;
+                                            animation-name: backend-animation;
+                                            animation-duration: 1s;">
+                    </div>
+                </div>
+                <h2 class="text skillProgrammingLanguagePercentage" >90%</h2>
+                <h2 class="text skillProgrammingLanguagePercentage" id="backRowInfo"><i class="fa-sharp fa-solid fa-circle-info"></i></h2>
+            </div>
+            <div class="skillRow languageDetail" id="backDetails">
+                <h3 class="text orangeText"><i class="fa-solid fa-calendar-days orangeText"></i> 5 Years of experience</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Java Spring</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Java EE</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> PHP</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Node js</h3>
+                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> Click to see related projects</h4>
+            </div>
+            <div class="skillRow languageRow" id="webRow">
+                <h2 class="text skillProgrammingLanguage" >Web</h2>
+                <div class="skillStatusBar">
+                    <div class="skillLevel" style="-webkit-animation: web-animation 1s forwards;
+                                            animation-name: web-animation;
+                                            animation-duration: 1s;">
+                    </div>
+                </div>
+                <h2 class="text skillProgrammingLanguagePercentage" >80%</h2>
+                <h2 class="text skillProgrammingLanguagePercentage"><i class="fa-sharp fa-solid fa-circle-info"></i></h2>
+            </div>
+            <div class="skillRow languageDetail" id="webDetails">
+                <h3 class="text orangeText"><i class="fa-solid fa-calendar-days orangeText"></i> 5 Years of experience</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Vue js</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> React js/native</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Html</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Css</h3>
+                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> Click to see related projects</h4>
+            </div>
+            <div class="skillRow languageRow" id="dataRow">
+                <h2 class="text skillProgrammingLanguage" >Data and AI</h2>
+                <div class="skillStatusBar">
+                    <div class="skillLevel" style="-webkit-animation: data-animation 1s forwards;
+                                            animation-name: data-animation;
+                                            animation-duration: 1s;">
+                    </div>
+                </div>
+                <h2 class="text skillProgrammingLanguagePercentage" >60%</h2>
+                <h2 class="text skillProgrammingLanguagePercentage"><i class="fa-sharp fa-solid fa-circle-info"></i></h2>
+            </div>
+            <div class="skillRow languageDetail" id="dataDetails">
+                <h3 class="text orangeText"><i class="fa-solid fa-calendar-days orangeText"></i> 1 Year of experience</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Linear programming</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Python</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Clips</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Clingo</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Prolog</h3>
+                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> Click to see related projects</h4>
+            </div>
+            <div class="skillRow languageRow" id="archRow">
+                <h2 class="text skillProgrammingLanguage" >Architecture</h2>
+                <div class="skillStatusBar">
+                    <div class="skillLevel" style="-webkit-animation: arch-animation 1s forwards;
+                                            animation-name: arch-animation;
+                                            animation-duration: 1s;">
+                    </div>
+                </div>
+                <h2 class="text skillProgrammingLanguagePercentage" >60%</h2>
+                <h2 class="text skillProgrammingLanguagePercentage"><i class="fa-sharp fa-solid fa-circle-info"></i></h2>
+            </div>
+            <div class="skillRow languageDetail" id="archDetails">
+                <h3 class="text orangeText"><i class="fa-solid fa-calendar-days orangeText"></i> 1 Year of experience</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Microservices</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Docker</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Kubernetes</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> AWS</h3>
+                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> Click to see related projects</h4>
+            </div>
+            <div class="skillRow languageRow" id="miscRow">
+                <h2 class="text skillProgrammingLanguage" >Misc</h2>
+                <div class="skillStatusBar">
+                    <div class="skillLevel" style="-webkit-animation: misc-animation 1s forwards;
+                                            animation-name: misc-animation;
+                                            animation-duration: 1s;">
+                    </div>
+                </div>
+                <h2 class="text skillProgrammingLanguagePercentage" >50%</h2>
+                <h2 class="text skillProgrammingLanguagePercentage"><i class="fa-sharp fa-solid fa-circle-info"></i></h2>
+            </div>
+            <div class="skillRow languageDetail" id="miscDetails">
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Git</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Svn</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Photoshop</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Unity 3D/C#</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> C/C++</h3>
+                <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Telegram Api's</h3>
+                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> Click to see related projects</h4>
+            </div>
+
         </div>
         <div class="footer">
             <a href="https://github.com/AlessandroCavaglia" target="_blank" class="footLink"> <i class="fa-brands fa-github"></i></a>

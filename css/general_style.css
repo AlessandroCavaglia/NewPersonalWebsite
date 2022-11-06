@@ -39,6 +39,7 @@ ul{
 body{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 @keyframes ani {
@@ -369,6 +370,8 @@ nav{
     padding-top: 7%;
     display: flex;
     flex-direction: column;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .timeLineRow{
@@ -404,9 +407,6 @@ nav{
 
 
 
-
-
-
 .timeLinePoint{
     position: absolute;
     width: 80px;
@@ -420,6 +420,7 @@ nav{
     backdrop-filter: blur(7px);
     background-color: #2a251a42;
 }
+
 .timeLinePoint:hover{
     cursor: pointer;
 }
@@ -439,9 +440,47 @@ nav{
 
 .timeLineTextLeft{
     margin-right: 10%;
+    -webkit-animation: slide-in-left 1s forwards;
+    /*animation: slide-in 0.8s forwards;*/
+    animation-name: slide-in-left;
+    animation-duration: 1s;
+    transform: translateX(-200%);
+}
+
+@keyframes slide-in-left {
+    0% {transform: translateX(-200%);}
+    3% {transform: translateX(-100%);}
+    70% { transform: translateX(2%); }
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in-left {
+    0% {transform: translateX(-200%);}
+    3% {transform: translateX(-100%);}
+    70% { transform: translateX(2%); }
+    100% { transform: translateX(0%); }
 }
 .timeLineTextRight{
-    margin-left: 10%
+    margin-left: 10%;
+    -webkit-animation: slide-in-right 1s forwards;
+    /*animation: slide-in 0.8s forwards;*/
+    animation-name: slide-in-right;
+    animation-duration: 1s;
+    transform: translateX(200%);
+}
+
+@keyframes slide-in-right {
+    0% {transform: translateX(+200%);}
+    3% {transform: translateX(+100%);}
+    70% { transform: translateX(-2%); }
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {transform: translateX(+200%);}
+    3% {transform: translateX(+100%);}
+    70% { transform: translateX(-2%); }
+    100% { transform: translateX(0%); }
 }
 
 
@@ -463,4 +502,295 @@ nav{
 
 .orangeText{
     color: #ff960094;
+}
+
+::-webkit-scrollbar{
+    backdrop-filter: blur(7px);
+    background-color: #2a251a;
+    border-radius: 5px;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ff960094;
+    border-radius: 5px;
+}
+.mobileScreen{
+    display: none;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 1330px) {
+    .timeLineText{
+        font-size: 35px;
+    }
+    .timeLinePoint{
+        width: 70px;
+        height: 70px;
+        right: -37px;
+        top: calc(50% - 35px);
+    }
+    .timeLineEndText{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .bigScreen{
+        display: none;
+    }
+    .mobileScreen{
+        display: flex;
+    }
+    .timeLineText{
+        font-size: 20px;
+    }
+    .timeLinePoint{
+        width: 50px;
+        height: 50px;
+        left: -27px;
+        top: calc(50% - 25px);
+    }
+    .timeLineColumnRight{
+        border-width: 4px;
+    }
+    .timeLineColumn{
+        width: calc(100% - 4px);
+    }
+    .timeLineTextLeft{
+        margin-right: 0;
+        margin-left: 30px;
+        margin-bottom: 10%;
+    }
+    .timeLineColumnLeftLast{
+        border-left: dashed #ff960094;
+        border-right: none;
+        border-width: 4px;
+    }
+    .timeLineContainer{
+        padding-top: 5%;
+    }
+    ::-webkit-scrollbar{
+        width: 5px;
+    }
+    .timeLineEndText{
+        font-size: 20px;
+    }
+    .timeLineContent{
+        width: 90%;
+        margin-top: 7vh;
+        height: 80vh;
+        min-height: unset;
+    }
+}
+/* End TimeLinePage */
+
+/* SkillsPage */
+.skillsContent{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    min-height: 80vh;
+    max-height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 0;
+    padding-top: 7%;
+    flex-direction: column;
+}
+.skillRow{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skillTitleIcon{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.skillTextTitle{
+    font-size: 50px;
+    display: inline-block;
+}
+.skillProgrammingLanguage{
+    width: 14%;
+    padding-right: 1%;
+    min-width: 14%;
+    max-width: 14%;
+}
+.skillStatusBar{
+    width: 100%;
+    backdrop-filter: blur(7px);
+    background-color: #2a251a;
+    height: 20px;
+    border-radius: 9px;
+    border:solid 1px #91590a94;
+    transition: width 0.8s ease-in-out;
+}
+.skillProgrammingLanguagePercentage{
+    text-align: right;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.skillProgrammingLanguageInfo{
+    padding-left: 1%;
+    padding-right: 1%;
+    overflow: hidden;
+}
+.skillLevel{
+    height: 100%;
+    background-color: #ff960094;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    width: 0;
+}
+.languageLinkText{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    animation:bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+.languageLinkText:hover{
+    cursor: pointer;
+}
+
+@keyframes backend-animation {
+    0% {width: 0;}
+    3% {width: 40%;}
+    70% { width: 97%; }
+    100% { width: 90%; }
+}
+
+@-webkit-keyframes backend-animation {
+    0% {width: 0;}
+    3% {width: 40%;}
+    70% { width: 97%; }
+    100% { width: 90%; }
+}
+
+@keyframes web-animation {
+    0% {width: 0;}
+    3% {width: 35%;}
+    70% { width: 83%; }
+    100% { width: 80%; }
+}
+@-webkit-keyframes web-animation {
+    0% {width: 0;}
+    3% {width: 35%;}
+    70% { width: 83%; }
+    100% { width: 80%; }
+}
+
+@keyframes data-animation {
+    0% {width: 0;}
+    0% {width: 0;}
+    3% {width: 20%;}
+    70% { width: 68%; }
+    100% { width: 60%; }
+}
+
+@-webkit-keyframes data-animation {
+    0% {width: 0;}
+    3% {width: 20%;}
+    70% { width: 68%; }
+    100% { width: 60%; }
+}
+
+
+
+@-webkit-keyframes arch-animation {
+    0% {width: 0;}
+    3% {width: 20%;}
+    70% { width: 62%; }
+    100% { width: 60%; }
+}
+
+@keyframes arch-animation {
+    0% {width: 0;}
+    3% {width: 20%;}
+    70% { width: 62%; }
+    100% { width: 60%; }
+}
+
+
+@keyframes misc-animation {
+    0% {width: 0;}
+    3% {width: 40%;}
+    70% { width: 72%; }
+    100% { width: 50%; }
+}
+
+@-webkit-keyframes misc-animation {
+    0% {width: 0;}
+    3% {width: 40%;}
+    70% { width: 72%; }
+    100% { width: 50%; }
+}
+
+#backRow:hover ~ #backDetails{
+    max-height: 500px;
+    transition: max-height 0.8s ease-in;
+}
+#backDetails:hover{
+    max-height: 500px;
+    transition: max-height 0.8s ease-in;
+
+}
+#webRow:hover ~ #webDetails{
+    max-height: 500px;
+    transition: max-height 0.8s ease-in;
+}
+#webDetails:hover{
+    max-height: 500px;
+    transition: max-height 0.8s ease-in;
+}
+
+#dataRow:hover ~ #dataDetails{
+    max-height: 500px;
+    transition: max-height 0.8s ease-in;
+}
+#dataDetails:hover{
+    max-height: 500px;
+    transition: max-height 0.8s ease-in;
+}
+#archRow:hover ~ #archDetails{
+    max-height: 500px;
+    transition: max-height 0.8s ease-in;
+}
+#archDetails:hover{
+    max-height: 500px;
+    transition: max-height 0.8s ease-in;
+}
+#miscRow:hover ~ #miscDetails{
+    max-height: 500px;
+    transition: max-height 0.8s ease-in;
+}
+#miscDetails:hover{
+    max-height: 500px;
+    transition: max-height 0.8s ease-in;
+}
+.languageDetail{
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.8s ease-out;
+    flex-direction: column;
+}
+.languageDetail h3{
+    margin: 2px;
 }
