@@ -794,3 +794,87 @@ nav{
 .languageDetail h3{
     margin: 2px;
 }
+/* ProjectPage */
+.projectContent{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    min-height: 80vh;
+    max-height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 0;
+    padding-top: 7%;
+    flex-direction: row;
+}
+.projectContentColumn{
+    height: 100%;
+    width: 60%;
+    background-color: red;
+    min-height: 80vh;
+}
+.projectListColumn{
+    width: 40%;
+    height: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projectList{
+
+}
+.projectItem{
+    border-bottom: solid 1px #c4bfb8;
+    padding-right: 10%;
+    font-size: 25px;
+    margin-bottom: 0;
+    width: 60%;
+    margin-top: 0;
+    opacity: 80%;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+    max-height: 500px;
+}
+.projectDetail{
+    text-align: left;
+    width: 60%;
+    /* padding-left: 19%; */
+    padding-right: 10%;
+    margin-top: 0;
+    font-size: 10px;
+    opacity: 60%;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+    max-height: 500px;
+}
+.projectItem:hover{
+    cursor: pointer;
+}
+.projectDetail:hover{
+    cursor: pointer;
+}
+.projectItem.active{
+    width: 80%;
+    font-size: 50px;
+    opacity: 100%;
+
+}
+.projectDetail.active{
+    width: 80%;
+    font-size: 20px;
+    opacity: 100%;
+}
+.projectItem.disabled{
+    width: 60%;
+    font-size: 20px;
+    max-height: 0;
+    border: none;
+}
+.projectDetail.disabled{
+    width: 60%;
+    font-size: 20px;
+    max-height: 0;
+
+}

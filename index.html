@@ -25,7 +25,7 @@
                     <a href="#home" onclick="changeSection('home')"><li class="text navLink cursive">Home</li></a>
                     <a href="#career" onclick="changeSection('career')"><li class="text navLink cursive">Career</li></a>
                     <a href="#skills" onclick="changeSection('skills')"><li class="text navLink cursive">Skills</li></a>
-                    <a href="#" ><li class="text navLink cursive">Projects</li></a>
+                    <a href="#projects" onclick="changeSection('projects')" ><li class="text navLink cursive">Projects</li></a>
                     <!--<a href="#" ><li class="text navLink cursive">Contacts</li></a>-->
                 </ul>
             </div>
@@ -267,7 +267,7 @@
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Java EE</h3>
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> PHP</h3>
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Node js</h3>
-                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> Click to see related projects</h4>
+                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
             </div>
             <div class="skillRow languageRow" id="webRow">
                 <h2 class="text skillProgrammingLanguage" >Web</h2>
@@ -286,7 +286,7 @@
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> React js/native</h3>
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Html</h3>
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Css</h3>
-                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> Click to see related projects</h4>
+                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
             </div>
             <div class="skillRow languageRow" id="dataRow">
                 <h2 class="text skillProgrammingLanguage" >Data and AI</h2>
@@ -306,7 +306,7 @@
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Clips</h3>
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Clingo</h3>
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Prolog</h3>
-                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> Click to see related projects</h4>
+                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
             </div>
             <div class="skillRow languageRow" id="archRow">
                 <h2 class="text skillProgrammingLanguage" >Architecture</h2>
@@ -325,7 +325,7 @@
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Docker</h3>
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Kubernetes</h3>
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> AWS</h3>
-                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> Click to see related projects</h4>
+                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
             </div>
             <div class="skillRow languageRow" id="miscRow">
                 <h2 class="text skillProgrammingLanguage" >Misc</h2>
@@ -345,9 +345,25 @@
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Unity 3D/C#</h3>
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> C/C++</h3>
                 <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Telegram Api's</h3>
-                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> Click to see related projects</h4>
+                <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
             </div>
 
+        </div>
+        <div class="projectContent hidden" id="projects">
+            <div class="projectContentColumn">
+
+            </div>
+            <div class="projectListColumn">
+                    <h2 class="text projectItem active" id="proj-1" onclick="setActiveProject('1')">Progetto1</h2>
+                    <h4 class="text projectDetail orangeText active" id="proj-detail-1" onclick="setActiveProject('1')">Backend</h4>
+                    <h2 class="text projectItem " id="proj-2" onclick="setActiveProject('2')">Progetto2</h2>
+                    <h4 class="text projectDetail orangeText"  id="proj-detail-2" onclick="setActiveProject('2')">Backend</h4>
+                    <h2 class="text projectItem" id="proj-3" onclick="setActiveProject('3')">Progetto3</h2>
+                    <h4 class="text projectDetail orangeText" id="proj-detail-3" onclick="setActiveProject('3')">Backend</h4>
+                    <h2 class="text projectItem disabled" id="proj-4" onclick="setActiveProject('4')">Progetto4</h2>
+                    <h4 class="text projectDetail disabled orangeText" id="proj-detail-4" onclick="setActiveProject('3')">Backend</h4>
+
+            </div>
         </div>
         <div class="footer">
             <a href="https://github.com/AlessandroCavaglia" target="_blank" class="footLink"> <i class="fa-brands fa-github"></i></a>
