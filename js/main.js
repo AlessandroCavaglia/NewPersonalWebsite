@@ -28,19 +28,74 @@ function setActiveProject(id){
     }
     let active_proj=document.getElementById("proj-"+activeProject);
     let active_proj_detail=document.getElementById("proj-detail-"+activeProject);
+    let active_proj_dot=document.getElementById("dot-"+activeProject);
 
     let new_proj=document.getElementById("proj-"+id);
     let new_proj_detail=document.getElementById("proj-detail-"+id);
+    let new_proj_dot=document.getElementById("dot-"+id);
 
     active_proj.classList.remove("active")
     active_proj_detail.classList.remove("active")
+    active_proj_dot.classList.remove("active")
 
     new_proj.classList.add("active")
     new_proj_detail.classList.add("active")
+    new_proj_dot.classList.add("active")
 
     activeProject=id;
     activeProjectId=projects.indexOf(id);
-    console.log(activeProjectId)
+    updateProjectsVisibility();
+}
+
+function moveToNextProject(){
+    if(activeProjectId===projects.length-1){
+        return
+    }
+    const id=projects[activeProjectId+1]
+    let active_proj=document.getElementById("proj-"+activeProject);
+    let active_proj_detail=document.getElementById("proj-detail-"+activeProject);
+    let active_proj_dot=document.getElementById("dot-"+activeProject);
+
+    let new_proj=document.getElementById("proj-"+id);
+    let new_proj_detail=document.getElementById("proj-detail-"+id);
+    let new_proj_dot=document.getElementById("dot-"+id);
+
+    active_proj.classList.remove("active")
+    active_proj_detail.classList.remove("active")
+    active_proj_dot.classList.remove("active")
+
+    new_proj.classList.add("active")
+    new_proj_detail.classList.add("active")
+    new_proj_dot.classList.add("active")
+
+    activeProject=id;
+    activeProjectId=projects.indexOf(id);
+    updateProjectsVisibility();
+}
+
+function moveToPreviousProject(){
+    if(activeProjectId===0){
+        return
+    }
+    const id=projects[activeProjectId-1]
+    let active_proj=document.getElementById("proj-"+activeProject);
+    let active_proj_detail=document.getElementById("proj-detail-"+activeProject);
+    let active_proj_dot=document.getElementById("dot-"+activeProject);
+
+    let new_proj=document.getElementById("proj-"+id);
+    let new_proj_detail=document.getElementById("proj-detail-"+id);
+    let new_proj_dot=document.getElementById("dot-"+id);
+
+    active_proj.classList.remove("active")
+    active_proj_detail.classList.remove("active")
+    active_proj_dot.classList.remove("active")
+
+    new_proj.classList.add("active")
+    new_proj_detail.classList.add("active")
+    new_proj_dot.classList.add("active")
+
+    activeProject=id;
+    activeProjectId=projects.indexOf(id);
     updateProjectsVisibility();
 }
 

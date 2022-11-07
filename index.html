@@ -358,11 +358,18 @@
                     <h4 class="text projectDetail orangeText active" id="proj-detail-1" onclick="setActiveProject('1')">Backend</h4>
                     <h2 class="text projectItem " id="proj-2" onclick="setActiveProject('2')">Progetto2</h2>
                     <h4 class="text projectDetail orangeText"  id="proj-detail-2" onclick="setActiveProject('2')">Backend</h4>
-                    <h2 class="text projectItem" id="proj-3" onclick="setActiveProject('3')">Progetto3</h2>
-                    <h4 class="text projectDetail orangeText" id="proj-detail-3" onclick="setActiveProject('3')">Backend</h4>
+                    <h2 class="text projectItem disabled" id="proj-3" onclick="setActiveProject('3')">Progetto3</h2>
+                    <h4 class="text projectDetail orangeText disabled" id="proj-detail-3" onclick="setActiveProject('3')">Backend</h4>
                     <h2 class="text projectItem disabled" id="proj-4" onclick="setActiveProject('4')">Progetto4</h2>
                     <h4 class="text projectDetail disabled orangeText" id="proj-detail-4" onclick="setActiveProject('3')">Backend</h4>
-
+            </div>
+            <div class="projectListDots">
+                    <span class="text projectArrow" onclick="moveToPreviousProject()"><i class="fa-sharp fa-solid fa-chevron-up"></i></span>
+                    <span class="projectDot active" id="dot-1"> </span>
+                    <span class="projectDot" id="dot-2"> </span>
+                    <span class="projectDot" id="dot-3"> </span>
+                    <span class="projectDot" id="dot-4"> </span>
+                    <span class="text projectArrow" onclick="moveToNextProject()"><i class="fa-sharp fa-solid fa-chevron-down"></i></span>
             </div>
         </div>
         <div class="footer">

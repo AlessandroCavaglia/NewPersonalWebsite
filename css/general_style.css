@@ -814,7 +814,7 @@ nav{
     min-height: 80vh;
 }
 .projectListColumn{
-    width: 40%;
+    width: 38%;
     height: 100%;
     min-height: 80vh;
     display: flex;
@@ -822,9 +822,16 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.projectList{
-
+.projectListDots{
+    width: 2%;
+    height: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 .projectItem{
     border-bottom: solid 1px #c4bfb8;
     padding-right: 10%;
@@ -833,7 +840,7 @@ nav{
     width: 60%;
     margin-top: 0;
     opacity: 80%;
-    transition: all 1s ease-in-out;
+    transition: all 0.6s ease-in-out;
     overflow: hidden;
     max-height: 500px;
 }
@@ -845,7 +852,7 @@ nav{
     margin-top: 0;
     font-size: 10px;
     opacity: 60%;
-    transition: all 1s ease-in-out;
+    transition: all 0.6s ease-in-out;
     overflow: hidden;
     max-height: 500px;
 }
@@ -871,10 +878,28 @@ nav{
     font-size: 20px;
     max-height: 0;
     border: none;
+    opacity: 0;
 }
 .projectDetail.disabled{
     width: 60%;
     font-size: 20px;
     max-height: 0;
-
+    opacity: 0;
+}
+.projectDot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #c4bfb8;
+    margin-bottom: 4px;
+    transition: all  0.6s ease-in-out;
+}
+.projectDot.active{
+    width: 8px;
+    height: 8px;
+    background-color: #ff960094;
+}
+.projectArrow:hover{
+    cursor: pointer;
+    color:  #ff960094;;
 }
