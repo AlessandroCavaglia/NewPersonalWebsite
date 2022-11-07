@@ -598,6 +598,10 @@ nav{
     padding-top: 7%;
     flex-direction: column;
 }
+.skillContainer{
+    width:100%;
+    height: 100%;
+}
 .skillRow{
     width: 100%;
     height: min-content;
@@ -744,55 +748,79 @@ nav{
 }
 
 #backRow:hover ~ #backDetails{
-    max-height: 500px;
+    max-height: 1000px;
     transition: max-height 0.8s ease-in;
 }
 #backDetails:hover{
-    max-height: 500px;
+    max-height: 1000px;
     transition: max-height 0.8s ease-in;
 
 }
 #webRow:hover ~ #webDetails{
-    max-height: 500px;
+    max-height: 1000px;
     transition: max-height 0.8s ease-in;
 }
 #webDetails:hover{
-    max-height: 500px;
+    max-height: 1000px;
     transition: max-height 0.8s ease-in;
 }
 
 #dataRow:hover ~ #dataDetails{
-    max-height: 500px;
+    max-height: 1000px;
     transition: max-height 0.8s ease-in;
 }
 #dataDetails:hover{
-    max-height: 500px;
+    max-height: 1000px;
     transition: max-height 0.8s ease-in;
 }
 #archRow:hover ~ #archDetails{
-    max-height: 500px;
+    max-height: 1000px;
     transition: max-height 0.8s ease-in;
 }
 #archDetails:hover{
-    max-height: 500px;
+    max-height: 1000px;
     transition: max-height 0.8s ease-in;
 }
 #miscRow:hover ~ #miscDetails{
-    max-height: 500px;
+    max-height: 1000px;
     transition: max-height 0.8s ease-in;
 }
 #miscDetails:hover{
-    max-height: 500px;
+    max-height: 1000px;
     transition: max-height 0.8s ease-in;
 }
 .languageDetail{
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.8s ease-out;
+    transition: max-height 0.8s 0.4s ease-in, max-height 0.4s ease-out;
     flex-direction: column;
+    justify-content: flex-start;
 }
 .languageDetail h3{
     margin: 2px;
+}
+@media screen and (max-width: 1330px) {
+
+}
+@media screen and (max-width: 950px) {
+    .skillProgrammingLanguage{
+        width: 50%;
+        font-size: 20px;
+        max-width: 50%;
+    }
+    .skillProgrammingLanguagePercentage{
+        font-size: 20px;
+    }
+    .skillsContent{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 750px) {
+    .skillProgrammingLanguage{
+        width: 60%;
+        font-size: 20px;
+        max-width: 60%;
+    }
 }
 /* ProjectPage */
 .projectContent{
@@ -842,7 +870,7 @@ nav{
     opacity: 80%;
     transition: all 0.6s ease-in-out;
     overflow: hidden;
-    max-height: 500px;
+    max-height: 1000px;
 }
 .projectDetail{
     text-align: left;
@@ -854,7 +882,7 @@ nav{
     opacity: 60%;
     transition: all 0.6s ease-in-out;
     overflow: hidden;
-    max-height: 500px;
+    max-height: 1000px;
 }
 .projectItem:hover{
     cursor: pointer;
