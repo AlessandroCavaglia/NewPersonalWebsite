@@ -749,50 +749,50 @@ nav{
 
 #backRow:hover ~ #backDetails{
     max-height: 1000px;
-    transition: max-height 0.8s ease-in;
+    transition: max-height 1s ease-in;
 }
 #backDetails:hover{
     max-height: 1000px;
-    transition: max-height 0.8s ease-in;
+    transition: max-height 1s ease-in;
 
 }
 #webRow:hover ~ #webDetails{
     max-height: 1000px;
-    transition: max-height 0.8s ease-in;
+    transition: max-height 1s ease-in;
 }
 #webDetails:hover{
     max-height: 1000px;
-    transition: max-height 0.8s ease-in;
+    transition: max-height 1s ease-in;
 }
 
 #dataRow:hover ~ #dataDetails{
     max-height: 1000px;
-    transition: max-height 0.8s ease-in;
+    transition: max-height 1s ease-in;
 }
 #dataDetails:hover{
     max-height: 1000px;
-    transition: max-height 0.8s ease-in;
+    transition: max-height 1s ease-in;
 }
 #archRow:hover ~ #archDetails{
     max-height: 1000px;
-    transition: max-height 0.8s ease-in;
+    transition: max-height 1s ease-in;
 }
 #archDetails:hover{
     max-height: 1000px;
-    transition: max-height 0.8s ease-in;
+    transition: max-height 1s ease-in;
 }
 #miscRow:hover ~ #miscDetails{
     max-height: 1000px;
-    transition: max-height 0.8s ease-in;
+    transition: max-height 1s ease-in;
 }
 #miscDetails:hover{
     max-height: 1000px;
-    transition: max-height 0.8s ease-in;
+    transition: max-height 1s ease-in;
 }
 .languageDetail{
     overflow: hidden;
     max-height: 0;
-    transition: max-height 0.8s 0.4s ease-in, max-height 0.4s ease-out;
+    transition: max-height 1s  ease-in, max-height 0.4s ease-out;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -824,7 +824,7 @@ nav{
 }
 /* ProjectPage */
 .projectContent{
-    width: 80%;
+    width: 90%;
     height: 80%;
     display: flex;
     min-height: 80vh;
@@ -835,12 +835,7 @@ nav{
     padding-top: 7%;
     flex-direction: row;
 }
-.projectContentColumn{
-    height: 100%;
-    width: 60%;
-    background-color: red;
-    min-height: 80vh;
-}
+
 .projectListColumn{
     width: 38%;
     height: 100%;
@@ -907,12 +902,14 @@ nav{
     max-height: 0;
     border: none;
     opacity: 0;
+    margin: 0;
 }
 .projectDetail.disabled{
     width: 60%;
     font-size: 20px;
     max-height: 0;
     opacity: 0;
+    margin: 0;
 }
 .projectDot{
     width: 5px;
@@ -929,5 +926,73 @@ nav{
 }
 .projectArrow:hover{
     cursor: pointer;
-    color:  #ff960094;;
+    color:  #ff960094;
+}
+.projectContentColumn{
+    height: 100%;
+    width: 70%;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectCard{
+    width: 55vw;
+    max-height: 1000px;
+    opacity: 100;
+    transition: all 0.5s ease-in-out;
+    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.projectCardImage{
+    width: 55vw;
+    height: calc((55vw/1.77));
+    background-image: url(https://albertocampini.github.io/img/prolog.gif);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.projectCard.disabled{
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.projectCardTitle{
+    margin-bottom: 0;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 0%;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+.projectCardCategory{
+    margin-bottom: 0;
+    margin-top: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.projectCardDescription{
+    margin-bottom: 25px;
+    margin-top: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.projectCardTextDiv{
+    backdrop-filter: blur(3px);
+    background-color: #1f20299c;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-top: -40px;
+    box-shadow: 0px -7px 25px 5px rgb(0 0 0 / 63%);
+}
+.projectCardLink{
+    text-align: right;
+    padding-right: 5%;
+    text-decoration: underline;
+}
+.projectCardLink:hover{
+    cursor: pointer;
 }
