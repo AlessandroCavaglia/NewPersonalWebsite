@@ -290,7 +290,7 @@
                     <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
                 </div>
                 <div class="skillRow languageRow" id="dataRow">
-                    <h2 class="text skillProgrammingLanguage" >Data and AI</h2>
+                    <h2 class="text skillProgrammingLanguage" >Data & AI</h2>
                     <div class="skillStatusBar">
                         <div class="skillLevel" style="-webkit-animation: data-animation 1s forwards;
                                                 animation-name: data-animation;
@@ -348,70 +348,84 @@
             </div>
         </div>
         <div class="projectContent hidden" id="projects">
-            <div class="projectContentColumn">
-                <div class="projectCard" id="project-card-1">
-                    <div class="projectCardImage">
-
-                    </div>
-                    <div class="projectCardTextDiv">
-                        <h1 class="text projectCardTitle">Progetto1</h1>
-                        <h4 class="text orangeText projectCardCategory">Backend</h4>
-                        <h4 class="text projectCardDescription">In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah
-                            In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah</h4>
-                        <h5 class="text projectCardLink orangeText">Read more..</h5>
-                    </div>
-                </div>
-                <div class="projectCard disabled" id="project-card-2">
-                    <div class="projectCardImage">
-
-                    </div>
-                    <div class="projectCardTextDiv">
-                        <h1 class="text projectCardTitle">Progetto2</h1>
-                        <h4 class="text orangeText projectCardCategory">Backend</h4>
-                        <h4 class="text projectCardDescription">In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah
-                            In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah</h4>
-                    </div>
-                </div>
-                <div class="projectCard disabled" id="project-card-3">
-                    <div class="projectCardImage">
-
-                    </div>
-                    <div class="projectCardTextDiv">
-                        <h1 class="text projectCardTitle">Progetto3</h1>
-                        <h4 class="text orangeText projectCardCategory">Backend</h4>
-                        <h4 class="text projectCardDescription">In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah
-                            In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah</h4>
-                    </div>
-                </div>
-                <div class="projectCard disabled" id="project-card-4">
-                    <div class="projectCardImage">
-
-                    </div>
-                    <div class="projectCardTextDiv">
-                        <h1 class="text projectCardTitle">Progetto4</h1>
-                        <h4 class="text orangeText projectCardCategory">Backend</h4>
-                        <h4 class="text projectCardDescription">In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah
-                            In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah</h4>
-                    </div>
-                </div>
+            <div class="projectsRow">
+                <h3 class="text categoryText" id="filter-backend" onclick="setFilter('backend')">BackEnd</h3>
+                <h3 class="text categoryText" id="filter-frontend" onclick="setFilter('frontend')">FrontEnd</h3>
+                <h3 class="text categoryText" id="filter-data&ai" onclick="setFilter('data&ai')">Data&AI</h3>
+                <h3 class="text categoryText" id="filter-architecture" onclick="setFilter('architecture')">Architecture</h3>
+                <h3 class="text categoryText" id="filter-misc" onclick="setFilter('misc')">Misc</h3>
             </div>
-            <div class="projectListColumn">
-                    <h2 class="text projectItem active" id="proj-1" onclick="setActiveProject('1')">Progetto1</h2>
-                    <h4 class="text projectDetail orangeText active" id="proj-detail-1" onclick="setActiveProject('1')">Backend</h4>
-                    <h2 class="text projectItem " id="proj-2" onclick="setActiveProject('2')">Progetto2</h2>
-                    <h4 class="text projectDetail orangeText"  id="proj-detail-2" onclick="setActiveProject('2')">Backend</h4>
-                    <h2 class="text projectItem disabled" id="proj-3" onclick="setActiveProject('3')">Progetto3</h2>
-                    <h4 class="text projectDetail orangeText disabled" id="proj-detail-3" onclick="setActiveProject('3')">Backend</h4>
-                    <h2 class="text projectItem disabled" id="proj-4" onclick="setActiveProject('4')">Progetto4</h2>
-                    <h4 class="text projectDetail disabled orangeText" id="proj-detail-4" onclick="setActiveProject('3')">Backend</h4>
-            </div>
-            <div class="projectListDots">
-                    <span class="text projectArrow" onclick="moveToPreviousProject()"><i class="fa-sharp fa-solid fa-chevron-up"></i></span>
-                    <span class="projectDot active" id="dot-1"> </span>
-                    <span class="projectDot" id="dot-2"> </span>
-                    <span class="projectDot" id="dot-3"> </span>
-                    <span class="projectDot" id="dot-4"> </span>
-                    <span class="text projectArrow" onclick="moveToNextProject()"><i class="fa-sharp fa-solid fa-chevron-down"></i></span>
+            <div class="projectsRow">
+                <div class="projectContentColumn">
+                    <div class="projectCard" id="project-card-1">
+                        <div class="projectCardImage">
+
+                        </div>
+                        <div class="projectCardTextDiv">
+                            <h1 class="text projectCardTitle">Progetto1</h1>
+                            <h4 class="text orangeText projectCardCategory">BackEnd, Architecture</h4>
+                            <h4 class="text projectCardDescription">In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah
+                                In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah</h4>
+                            <h5 class="text projectCardLink orangeText">Read more..</h5>
+                        </div>
+                    </div>
+                    <div class="projectCard disabled" id="project-card-2">
+                        <div class="projectCardImage">
+
+                        </div>
+                        <div class="projectCardTextDiv">
+                            <h1 class="text projectCardTitle">Progetto2</h1>
+                            <h4 class="text orangeText projectCardCategory">FrontEnd</h4>
+                            <h4 class="text projectCardDescription">In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah
+                                In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah</h4>
+                        </div>
+                    </div>
+                    <div class="projectCard disabled" id="project-card-3">
+                        <div class="projectCardImage">
+
+                        </div>
+                        <div class="projectCardTextDiv">
+                            <h1 class="text projectCardTitle">Progetto3</h1>
+                            <h4 class="text orangeText projectCardCategory">Data & AI</h4>
+                            <h4 class="text projectCardDescription">In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah
+                                In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah</h4>
+                        </div>
+                    </div>
+                    <div class="projectCard disabled" id="project-card-4">
+                        <div class="projectCardImage">
+
+                        </div>
+                        <div class="projectCardTextDiv">
+                            <h1 class="text projectCardTitle">Progetto4</h1>
+                            <h4 class="text orangeText projectCardCategory">Misc</h4>
+                            <h4 class="text projectCardDescription">In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah
+                                In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="projectListColumn">
+                    <div class="projectListNamesContainer">
+                        <div class="projectListNames">
+                            <h2 class="text projectItem active" id="proj-1" onclick="setActiveProject('1')">Progetto1</h2>
+                            <h4 class="text projectDetail orangeText active" id="proj-detail-1" onclick="setActiveProject('1')">BackEnd, Architecture</h4>
+                            <h2 class="text projectItem " id="proj-2" onclick="setActiveProject('2')">Progetto2</h2>
+                            <h4 class="text projectDetail orangeText"  id="proj-detail-2" onclick="setActiveProject('2')">FrontEnd</h4>
+                            <h2 class="text projectItem disabled" id="proj-3" onclick="setActiveProject('3')">Progetto3</h2>
+                            <h4 class="text projectDetail orangeText disabled" id="proj-detail-3" onclick="setActiveProject('3')">Data & AI</h4>
+                            <h2 class="text projectItem disabled" id="proj-4" onclick="setActiveProject('4')">Progetto4</h2>
+                            <h4 class="text projectDetail disabled orangeText" id="proj-detail-4" onclick="setActiveProject('3')">Misc</h4>
+                        </div>
+                        <div class="projectListDots">
+                            <span class="text projectArrow" onclick="moveToPreviousProject()"><i class="fa-sharp fa-solid fa-chevron-up"></i></span>
+                            <span class="projectDot active" id="dot-1"> </span>
+                            <span class="projectDot" id="dot-2"> </span>
+                            <span class="projectDot" id="dot-3"> </span>
+                            <span class="projectDot" id="dot-4"> </span>
+                            <span class="text projectArrow" onclick="moveToNextProject()"><i class="fa-sharp fa-solid fa-chevron-down"></i></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="footer">
