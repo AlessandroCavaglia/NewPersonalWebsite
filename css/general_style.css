@@ -13,14 +13,28 @@
     display: none !important;
 }
 .footer{
-    margin-top: 4%;
+    margin-top: 4vh;
+    height: 7vh;
+    max-height: 7vh;
+    overflow: hidden;
 }
 .footLink{
     color: #c4bfb8;
     padding-left: 1vw;
     font-size: 3vw;
 }
-
+.content {
+    margin-top: 77px !important;
+    min-height: calc(89vh - 77px) !important;
+    max-height: calc(89vh - 77px) !important;
+    width: 80% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 0;
+}
 .footLink:hover{
     color: #aca38c;
 }
@@ -49,16 +63,7 @@ body{
 }
 
 .homeContent{
-    width: 80%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    max-height: 80vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    z-index: 0;
+
 }
 
 .text{
@@ -216,6 +221,12 @@ nav{
         margin-bottom: 10px;
         border-radius: 6px;
     }
+    .content{
+        min-height: calc(89vh - 94px) !important;
+        max-height: calc(89vh - 94px) !important;
+        margin-top: 94px !important;
+        width: 85% !important;
+    }
     .hiddenNavCheckBox:checked ~ .mcBurger
     {
         opacity: 1;
@@ -270,8 +281,17 @@ nav{
     #menuToggle{
         left: 20px;
     }
+    .content{
+        width: 90% !important;
+    }
 
 }
+@media screen and (max-width: 700px) {
+    .content{
+        width: 95% !important;
+    }
+}
+
 
 
 /* End NavBar */
@@ -280,7 +300,6 @@ nav{
 
 /* FirstPage */
 .homeTextBoxContainer{
-    height: 50%;
     animation: over 0.9s linear forwards;
     -webkit-animation: over 0.9s linear forwards;
     padding-bottom: 1%;
@@ -325,27 +344,17 @@ nav{
 }
 /* Tablet */
 @media screen and (max-width: 1330px) {
-    .homeContent{
-        width: 85%;
-    }
     .bigFirstText{
         font-size: 70px;
     }
     .footLink{
-        font-size: 4vw;
+        font-size: 3vw;
         padding-left: 1.5vw;
     }
 }
 
 /* Mobile phone*/
 @media screen and (max-width: 900px) {
-    .homeContent{
-        height: 95%;
-    }
-    .homeTextBoxContainer{
-        height: 60%;
-        margin-top: 10%;
-    }
     .bigFirstText{
         font-size: 8vw;
     }
@@ -365,10 +374,9 @@ nav{
 
 /* TimeLinePage */
 .timeLineContainer{
-    height: 50%;
     padding-bottom: 1%;
     width: 100%;
-    padding-top: 7%;
+    padding-top: 1%;
     display: flex;
     flex-direction: column;
     padding-left: 1%;
@@ -486,15 +494,7 @@ nav{
 
 
 .timeLineContent{
-    width: 80%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    min-height: 80vh;
-    max-height: 80vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    z-index: 0;
+    align-items: baseline;
 }
 
 .timeLineEndText{
@@ -578,7 +578,6 @@ nav{
         font-size: 20px;
     }
     .timeLineContent{
-        width: 90%;
         margin-top: 7vh;
         height: 80vh;
         min-height: unset;
@@ -588,15 +587,6 @@ nav{
 
 /* SkillsPage */
 .skillsContent{
-    width: 80%;
-    height: 80%;
-    display: flex;
-    min-height: 80vh;
-    max-height: 80vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    z-index: 0;
-    padding-top: 7%;
     flex-direction: column;
 }
 .skillContainer{
@@ -812,9 +802,6 @@ nav{
     .skillProgrammingLanguagePercentage{
         font-size: 20px;
     }
-    .skillsContent{
-        width: 95%;
-    }
 }
 @media screen and (max-width: 750px) {
     .skillProgrammingLanguage{
@@ -825,15 +812,6 @@ nav{
 }
 /* ProjectPage */
 .projectContent{
-    width: 90%;
-    height: 80%;
-    display: flex;
-    min-height: 80vh;
-    max-height: 80vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    z-index: 0;
-    padding-top: 7%;
     flex-direction: column;
 }
 .projectsRow{
@@ -1037,4 +1015,69 @@ nav{
 .categoryText.active{
     color: #ff960094;
     border-color: #ff960094;
+}
+@media screen and (max-width: 950px) {
+    .projectsRowContent{
+        flex-direction: column;
+    }
+    .projectContentColumn{
+        width: 90%;
+        min-height: auto;
+        margin-bottom: 4%;
+        margin-top: 4%;
+    }
+    .projectListColumn{
+        width: 90%;
+    }
+    .projectCard{
+        width: 70vw;
+    }
+    .projectCardImage{
+        width: 70vw;
+        height: calc((70vw/1.77));
+    }
+    .categoryText{
+        margin-bottom: 1%;
+        font-size: 20px;
+    }
+    .projectItem.active{
+        font-size: 35px;
+    }
+    .projectItem{
+        font-size: 20px;
+    }
+    .projectDetail.active{
+        font-size: 20px;
+    }
+    .projectDetail{
+        font-size: 13px;
+        margin-bottom: 1%;
+    }
+    .projectCardDescription{
+        font-size: 20px;
+    }
+    .projectCardCategory{
+        font-size: 20px;
+    }
+    .projectCardTitle{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .projectCard{
+        width: 70vw;
+    }
+    .projectCardImage{
+        width: 70vw;
+        height: calc((70vw/1.77));
+    }
+    .projectCardDescription{
+        font-size: 15px;
+    }
+    .projectCardCategory{
+        font-size: 15px;
+    }
+    .projectCardTitle{
+        font-size: 25px;
+    }
 }

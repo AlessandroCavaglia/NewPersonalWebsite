@@ -33,7 +33,7 @@
     </nav>
 
     <div class="main-content">
-        <div class="homeContent" id="home">
+        <div class="homeContent content" id="home">
             <div class="homeTextBoxContainer" >
                 <div class="homeTextBox slide-in">
                     <h1 class="text bigFirstText" style="margin-top: -15px">Hello</h1>
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <div class="timeLineContent hidden" id="career">
+        <div class="timeLineContent hidden content" id="career">
             <!-- Computer and tablet visualization -->
             <div class="timeLineContainer bigScreen">
                 <div class="timeLineRow" style="display: inline-block">
@@ -239,7 +239,7 @@
                 </div>
             </div>
         </div>
-        <div class="skillsContent hidden" id="skills">
+        <div class="skillsContent hidden content" id="skills">
             <div class="skillContainer">
                 <div class="skillRow">
                     <lord-icon
@@ -347,15 +347,15 @@
                 </div>
             </div>
         </div>
-        <div class="projectContent hidden" id="projects">
-            <div class="projectsRow">
+        <div class="projectContent hidden content" id="projects">
+            <div class="projectsRow" style="    flex-wrap: wrap;">
                 <h3 class="text categoryText" id="filter-backend" onclick="setFilter('backend')">BackEnd</h3>
                 <h3 class="text categoryText" id="filter-frontend" onclick="setFilter('frontend')">FrontEnd</h3>
                 <h3 class="text categoryText" id="filter-data&ai" onclick="setFilter('data&ai')">Data&AI</h3>
                 <h3 class="text categoryText" id="filter-architecture" onclick="setFilter('architecture')">Architecture</h3>
                 <h3 class="text categoryText" id="filter-misc" onclick="setFilter('misc')">Misc</h3>
             </div>
-            <div class="projectsRow">
+            <div class="projectsRow projectsRowContent">
                 <div class="projectContentColumn">
                     <div class="projectCard" id="project-card-1">
                         <div class="projectCardImage">
