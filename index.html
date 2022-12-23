@@ -268,7 +268,7 @@
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Java EE</h3>
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> PHP</h3>
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Node js</h3>
-                    <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
+                    <h4 class="text languageLinkText" onclick="setFilter('backend');changeSection('projects');"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
                 </div>
                 <div class="skillRow languageRow" id="webRow">
                     <h2 class="text skillProgrammingLanguage" >Web</h2>
@@ -287,7 +287,7 @@
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> React js/native</h3>
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Html</h3>
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Css</h3>
-                    <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
+                    <h4 class="text languageLinkText" onclick="setFilter('frontend');changeSection('projects');"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
                 </div>
                 <div class="skillRow languageRow" id="dataRow">
                     <h2 class="text skillProgrammingLanguage" >Data & AI</h2>
@@ -305,7 +305,7 @@
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Linear programming</h3>
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Python</h3>
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Clips, Clingo, Prolog</h3>
-                    <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
+                    <h4 class="text languageLinkText"onclick="setFilter('data&ai');changeSection('projects');"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
                 </div>
                 <div class="skillRow languageRow" id="archRow">
                     <h2 class="text skillProgrammingLanguage" >Architecture</h2>
@@ -324,7 +324,7 @@
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Docker</h3>
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Kubernetes</h3>
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> AWS</h3>
-                    <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
+                    <h4 class="text languageLinkText" onclick="setFilter('architecture');changeSection('projects');"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
                 </div>
                 <div class="skillRow languageRow" id="miscRow">
                     <h2 class="text skillProgrammingLanguage" >Misc</h2>
@@ -343,14 +343,14 @@
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Unity 3D/C#</h3>
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> C/C++</h3>
                     <h3 class="text"><i class="fa-solid fa-info orangeText"></i> Telegram Api's</h3>
-                    <h4 class="text languageLinkText"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
+                    <h4 class="text languageLinkText" onclick="setFilter('misc');changeSection('projects');"><i class="fa-sharp fa-solid fa-hand-pointer"></i> See related projects</h4>
                 </div>
             </div>
         </div>
-        <div class="projectContent hidden content" id="projects">
+        <div class="projectContent hidden content" id="projects" style="justify-content: normal">
             <div class="projectsRow" style="    flex-wrap: wrap;">
                 <h3 class="text categoryText" id="filter-backend" onclick="setFilter('backend')">BackEnd</h3>
-                <h3 class="text categoryText" id="filter-frontend" onclick="setFilter('frontend')">FrontEnd</h3>
+                <h3 class="text categoryText" id="filter-frontend" onclick="setFilter('frontend')">Web</h3>
                 <h3 class="text categoryText" id="filter-data&ai" onclick="setFilter('data&ai')">Data&AI</h3>
                 <h3 class="text categoryText" id="filter-architecture" onclick="setFilter('architecture')">Architecture</h3>
                 <h3 class="text categoryText" id="filter-misc" onclick="setFilter('misc')">Misc</h3>
@@ -358,48 +358,65 @@
             <div class="projectsRow projectsRowContent">
                 <div class="projectContentColumn">
                     <div class="projectCard" id="project-card-1">
-                        <div class="projectCardImage">
+                        <div class="projectCardImage" style="background-image: url(./img/MazeRunner.gif);">
 
                         </div>
                         <div class="projectCardTextDiv">
-                            <h1 class="text projectCardTitle">Progetto1</h1>
-                            <h4 class="text orangeText projectCardCategory">BackEnd, Architecture</h4>
-                            <h4 class="text projectCardDescription">In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah
-                                In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah</h4>
-                            <h5 class="text projectCardLink orangeText">Read more..</h5>
+                            <h1 class="text projectCardTitle">Maze Runner</h1>
+                            <h4 class="text orangeText projectCardCategory">Data & AI, Web</h4>
+                            <h4 class="text projectCardDescription">Project developed at the University of Turin, it uses logic
+                                programming (PROLOG) and the use of heuristics to explore a maze with the objective of reaching all
+                                the checkpoints pinned with the graphic interface
+                            </h4>
+                            <!--<h5 class="text projectCardLink orangeText">Read more..</h5>-->
                         </div>
                     </div>
                     <div class="projectCard disabled" id="project-card-2">
-                        <div class="projectCardImage">
+                        <div class="projectCardImage" style="background-image: url(./img/AbclabsFE.gif);">
 
                         </div>
                         <div class="projectCardTextDiv">
-                            <h1 class="text projectCardTitle">Progetto2</h1>
-                            <h4 class="text orangeText projectCardCategory">FrontEnd</h4>
-                            <h4 class="text projectCardDescription">In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah
-                                In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah</h4>
+                            <h1 class="text projectCardTitle">AbcLabs Landing Page</h1>
+                            <h4 class="text orangeText projectCardCategory">Web</h4>
+
+                            <h4 class="text projectCardDescription">Landing page del sito web della mia startup aperta nel 2021 con due colleghi universitari.
+                                Lading page of my startup that I founded in 2021 with two university colleagues.
+                                This website contains the list of Our works, the list of our prices and our contact form with management of privacy and anti-spam checks.</h4>
                         </div>
                     </div>
                     <div class="projectCard disabled" id="project-card-3">
-                        <div class="projectCardImage">
+                        <div class="projectCardImage" style="background-image: url(img/AbcLabsPannello.gif);">
 
                         </div>
                         <div class="projectCardTextDiv">
-                            <h1 class="text projectCardTitle">Progetto3</h1>
-                            <h4 class="text orangeText projectCardCategory">Data & AI</h4>
-                            <h4 class="text projectCardDescription">In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah
-                                In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah</h4>
+                            <h1 class="text projectCardTitle">AbcLabs Panel</h1>
+                            <h4 class="text orangeText projectCardCategory">Backend, Web, Architecture</h4>
+                            <h4 class="text projectCardDescription">This panel is the core of our startup business.
+                                With this panel the clients can access all the data about their websites and conveniently manage all of theirs invoices and their payments.
+                                This backend also takes charge in managing with Stripe all of the subscriptions and recurrent payments of all our clients. It is developed in NodeJs and deployed on a custom server that we configured fully.</h4>
                         </div>
                     </div>
                     <div class="projectCard disabled" id="project-card-4">
-                        <div class="projectCardImage">
+                        <div class="projectCardImage" style="background-image: url(img/RPlaceClone.gif);">
 
                         </div>
                         <div class="projectCardTextDiv">
-                            <h1 class="text projectCardTitle">Progetto4</h1>
-                            <h4 class="text orangeText projectCardCategory">Misc</h4>
-                            <h4 class="text projectCardDescription">In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah
-                                In questo progetto lorem ipsum bla bla faccio cose tipo backend yeah</h4>
+                            <h1 class="text projectCardTitle">R-Place Clone</h1>
+                            <h4 class="text orangeText projectCardCategory">Backend, Web, Architecture</h4>
+                            <h4 class="text projectCardDescription">This small project was an exercise in the use of Redis for fast and dynamic data access.
+                                It is a copy of the famous R-Place, an annual event hosted by Reddit where many clients compete in the colouring of a blank canvas.
+                                Mine was developed with Java Spring and Redis with a simple FE web developed with vanilla JS. The project is dockerizable and can be easily deployed on the cloud.</h4>
+                        </div>
+                    </div>
+                    <div class="projectCard disabled" id="project-card-5">
+                        <div class="projectCardImage" style="background-image: url(img/MMSD.png);">
+
+                        </div>
+                        <div class="projectCardTextDiv">
+                            <h1 class="text projectCardTitle">Calendar optimization</h1>
+                            <h4 class="text orangeText projectCardCategory">Data & AI, Misc</h4>
+                            <h4 class="text projectCardDescription">Project developed with the University of Turin. The objective is using linear programming to create a software that can optimize the exam session pianification
+                                working on the teacher's preferences and availability but taking in consideration also the optimal distance between assignments.</h4>
                         </div>
                     </div>
 
@@ -407,14 +424,16 @@
                 <div class="projectListColumn">
                     <div class="projectListNamesContainer">
                         <div class="projectListNames">
-                            <h2 class="text projectItem active" id="proj-1" onclick="setActiveProject('1')">Progetto1</h2>
-                            <h4 class="text projectDetail orangeText active" id="proj-detail-1" onclick="setActiveProject('1')">BackEnd, Architecture</h4>
-                            <h2 class="text projectItem " id="proj-2" onclick="setActiveProject('2')">Progetto2</h2>
-                            <h4 class="text projectDetail orangeText"  id="proj-detail-2" onclick="setActiveProject('2')">FrontEnd</h4>
-                            <h2 class="text projectItem disabled" id="proj-3" onclick="setActiveProject('3')">Progetto3</h2>
-                            <h4 class="text projectDetail orangeText disabled" id="proj-detail-3" onclick="setActiveProject('3')">Data & AI</h4>
-                            <h2 class="text projectItem disabled" id="proj-4" onclick="setActiveProject('4')">Progetto4</h2>
-                            <h4 class="text projectDetail disabled orangeText" id="proj-detail-4" onclick="setActiveProject('3')">Misc</h4>
+                            <h2 class="text projectItem active" id="proj-1" onclick="setActiveProject('1')">Maze Runner</h2>
+                            <h4 class="text projectDetail orangeText active" id="proj-detail-1" onclick="setActiveProject('1')">Data & AI, Web</h4>
+                            <h2 class="text projectItem " id="proj-2" onclick="setActiveProject('2')">AbcLabs Website</h2>
+                            <h4 class="text projectDetail orangeText"  id="proj-detail-2" onclick="setActiveProject('2')">Web</h4>
+                            <h2 class="text projectItem disabled" id="proj-3" onclick="setActiveProject('3')">AbcLabs Panel</h2>
+                            <h4 class="text projectDetail orangeText disabled" id="proj-detail-3" onclick="setActiveProject('3')">Backend, Web, Architecture</h4>
+                            <h2 class="text projectItem disabled" id="proj-4" onclick="setActiveProject('4')">R-Place Clone</h2>
+                            <h4 class="text projectDetail disabled orangeText" id="proj-detail-4" onclick="setActiveProject('3')">Backend, Web, Architecture</h4>
+                            <h2 class="text projectItem disabled" id="proj-5" onclick="setActiveProject('5')">Ottimizzazione calendario</h2>
+                            <h4 class="text projectDetail disabled orangeText" id="proj-detail-5" onclick="setActiveProject('5')">Data & AI, Misc</h4>
                         </div>
                         <div class="projectListDots">
                             <span class="text projectArrow" onclick="moveToPreviousProject()"><i class="fa-sharp fa-solid fa-chevron-up"></i></span>
@@ -422,6 +441,7 @@
                             <span class="projectDot" id="dot-2"> </span>
                             <span class="projectDot" id="dot-3"> </span>
                             <span class="projectDot" id="dot-4"> </span>
+                            <span class="projectDot" id="dot-5"> </span>
                             <span class="text projectArrow" onclick="moveToNextProject()"><i class="fa-sharp fa-solid fa-chevron-down"></i></span>
                         </div>
                     </div>

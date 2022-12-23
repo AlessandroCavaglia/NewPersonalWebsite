@@ -948,9 +948,12 @@ nav{
 .projectCardImage{
     width: 45vw;
     height: calc((45vw/1.77));
-    background-image: url(https://albertocampini.github.io/img/prolog.gif);
+    background-image: url(../img/MazeRunner.gif);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .projectCard.disabled{
     max-height: 0;
