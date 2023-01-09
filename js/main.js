@@ -1,9 +1,9 @@
 
 let active_id='home'
-const allProjects=['1','2','3','4','5']
-const projectsCat=['data&ai frontend','frontend','backend frontend architecture','backend frontend architecture','data&ai misc']
+const allProjects=['1','2','3','4','5','6']
+const projectsCat=['data&ai misc','frontend','backend frontend architecture','backend frontend architecture','data&ai misc','data&ai frontend']
 
-let projects=['1','2','3','4','5']
+let projects=['1','2','3','4','5','6']
 let activeProject='1'
 let activeProjectId=0
 let filter=null;
