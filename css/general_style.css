@@ -820,6 +820,7 @@ nav{
     width: 100%;
     justify-content: center;
     align-items: center;
+    max-height: 63vh;
 }
 
 .projectListColumn{
@@ -1022,6 +1023,9 @@ nav{
 @media screen and (max-width: 950px) {
     .projectsRowContent{
         flex-direction: column;
+    }
+    .projectsRow{
+        max-height: max-content;
     }
     .projectContentColumn{
         width: 90%;
