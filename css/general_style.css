@@ -1,13 +1,18 @@
 .main-content{
     width: 100vw;
-    min-height:100vh;
-    height:100%;
-    background-color: #1f2029;
+    min-height:90vh;
+    height:90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: ani 5s ease-in-out infinite;
     flex-direction: column;
+}
+body{
+    background-color: #1f2029;
+    animation: ani 5s ease-in-out infinite;
+}
+nav{
+    height: 10vh;
 }
 .hidden{
     display: none !important;
@@ -25,8 +30,8 @@
 }
 .content {
     margin-top: 77px !important;
-    min-height: calc(89vh - 77px) !important;
-    max-height: calc(89vh - 77px) !important;
+    min-height: calc(79vh - 77px) !important;
+    max-height: calc(79vh - 77px) !important;
     width: 80% !important;
     display: flex;
     justify-content: center;
@@ -222,8 +227,8 @@ nav{
         border-radius: 6px;
     }
     .content{
-        min-height: calc(89vh - 94px) !important;
-        max-height: calc(89vh - 94px) !important;
+        min-height: calc(79vh - 120px) !important;
+        max-height: calc(79vh - 120px) !important;
         margin-top: 94px !important;
         width: 85% !important;
     }
